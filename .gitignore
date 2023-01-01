@@ -1,0 +1,5 @@
+venv/
+.env
+
+feature_request
+hall_of_fame_names
