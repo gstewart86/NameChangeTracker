@@ -7,11 +7,12 @@ A bot for recording ( and possibly changing ) Slack usernames.
 
 Obtain a Slack API token from https://api.slack.com/web
 
+run:
+```
+make install
+```
+
+This will create a `.env` file. Modify it, inserting the API token:
 ```
 vim .env
-```
-insert token values in .env file, then: 
-```
-python -m pip install -r requirements.txt
-python hall_of_fame.py
 ```
