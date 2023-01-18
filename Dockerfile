@@ -1,8 +1,9 @@
 FROM python
 
 COPY .env .
-COPY requirements.txt .
+COPY requirements/prod requirements
+COPY src/ .
 
-RUN pip install -r requirements.txt
+RUN pip install -r requirements
 
-ENTRYPOINT [ "python3 hall_of_fame.py" ]
+ENTRYPOINT [ "python3 ncr.py" ]
